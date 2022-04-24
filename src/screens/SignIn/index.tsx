@@ -4,7 +4,15 @@ import { KeyboardAvoidingView, Platform } from 'react-native'
 import BrandImg from '@assets/brand.png';
 import { Input } from '@components/Input';
 
-import { Container, Content, Title, Brand } from './styles';
+import {
+  Container,
+  Content,
+  Title,
+  Brand,
+  ForgotPasswordButton,
+  ForgotPasswordLabel
+} from './styles';
+
 import { Button } from '@components/Button';
 
 export function SignIn() {
@@ -27,6 +35,10 @@ export function SignIn() {
             autoCorrect={false}
             autoCapitalize="none"
           />
+
+          <ForgotPasswordButton>
+            <ForgotPasswordLabel>Esqueci minha senha</ForgotPasswordLabel>
+          </ForgotPasswordButton>
 
           <Button
             title="Entrar"
