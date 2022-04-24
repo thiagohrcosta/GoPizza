@@ -37,3 +37,11 @@ export const Title = styled.Text`
     color: ${theme.COLORS.TITLE}
   `}
 `
+
+export const Brand = styled.Image.attrs({
+  resizeMode: 'contain',
+})`
+  height: 340px;
+  margin-top: 64px;
+  margin-bottom: 32px;
+`;
