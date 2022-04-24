@@ -15,3 +15,10 @@ export const Container = styled(LinearGradient).attrs(({ theme }) => ({
   flex: 1;
   justify-content: center;
 `;
+
+export const Content = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+  contentContainerStyle: {
+    paddingBottom:
+  }
+})
